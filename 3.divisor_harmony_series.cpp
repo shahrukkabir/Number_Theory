@@ -1,7 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 const int mx = 1e6+123;
 int cnt[mx];
+
 int main(){
     int lim=1e6;
     for(int i=1;i<=lim;i++){          //Number of divisor
@@ -9,7 +11,7 @@ int main(){
             cnt[j]++;                //T.C: n*ln(n)
         }
     }
-    
+    // cout<<cnt[100]<<endl;
     return 0;
 } 
 

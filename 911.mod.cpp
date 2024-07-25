@@ -1,4 +1,4 @@
-/* #include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
     int a,m; cin>>a>>m;
@@ -8,10 +8,9 @@ int main(){
     }
     cout<<res<<endl;
     return 0;
-} */
+} 
 
 //Determine 100 factorial modulo 97
-
 #include<bits/stdc++.h>
 using namespace std;
 int main(){

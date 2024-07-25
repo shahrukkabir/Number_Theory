@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 const int mx = 1e7+123;
+
 bitset<mx> isPrime;
 vector<int> primes;
 
@@ -49,7 +50,7 @@ int main()
 
     for ( int i = 1; i <= 10; i++ ) {
         cout << i << ": ";
-        for ( auto p : factors[i] ) cout << p << " ";
+        for ( auto u : factors[i] ) cout << u << " ";
         cout << endl;
     }
 

@@ -28,7 +28,6 @@
 
 
 //     1  2  3  4      6      9  12  18  36  -> 9 divisor of 36 
-
 // If i is a divisor, count it
 // If i is not the square root, count its pair
 

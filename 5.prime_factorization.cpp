@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 const int mx = 1e7+123;
+
 bitset<mx> isPrime;
 vector<int> primes;
 
@@ -55,9 +57,7 @@ int main()
     primeGen(lim);
 
     int n;  cin >> n;
-
     vector<int> factors = primeFactors(n);
-
     for(auto p : factors) cout << p << " ";
     cout << endl;
 

@@ -1,21 +1,19 @@
-/* 
-int sumOfDivisors(int n) {
+ 
+int sumOfDivisors(int N) {
     int sum = 0;
-    int sqrtNum = sqrt(n);
+    int sqrtNum = sqrt(N);
     for (int i = 1; i <= sqrtNum; i++) {
-        if (n % i == 0) {
+        if (N % i == 0) {
             sum += i; 
-            if (i != n/i) {
-                sum += n / i;
+            if (i != N/i) {            //     1  2  3  4    6    9  12  18  36  -> 9 divisor of 36
+                sum += N / i;
             }
         }
     }
     return sum;
 }
-*/
 
-
-/* 
+ 
 int sumOfDivisors(int N) {
     int sum = 0;
 
@@ -26,12 +24,14 @@ int sumOfDivisors(int N) {
     }
     return sum;
 }
-*/
+
 
 #include<bits/stdc++.h>
 typedef long long ll;
 using namespace std;
+
 const int mx = 1e8+123;
+
 bitset<mx> isPrime;
 vector<int> primes;
 

@@ -1,7 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll; 
+
 const int mx = 1e8+123;
+
 bitset<mx> isPrime;
 vector<int> primes;
 
@@ -47,7 +49,7 @@ ll eulerPhi ( ll n )
         res/=n;               //res *= (n-1)/n
         res*=(n-1);
     }
-    return res;
+    return res;  
 }
 
 int main()
@@ -68,23 +70,23 @@ int main()
 
 
 const int MX = 5e6+123;
-ll eulerPhi[MX];
+ll eulPhi[MX];
 
 int main(){
-    FAST
+    
     int lim = 5e6;
     primeGen(lim);
     for(int i=1;i<=lim;i++){
-        eulerPhi[i]=i;
+        eulPhi[i]=i;
     }
     for(auto p:primes){
         for(int j=p;j<=lim;j+=p){
-            eulerPhi[j]/=p;
-            eulerPhi[j]*=(p-1);
+            eulPhi[j]/=p;
+            eulPhi[j]*=(p-1);
         }
     }
     for(int i=1;i<=10;i++){
-        cout<<i<<" : "<<eulerPhi[i]<<endl;
+        cout<<i<<" : "<<eulPhi[i]<<endl;
     }
 
 
